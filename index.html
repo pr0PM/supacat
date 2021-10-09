@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="description" content="Cats for the Supabase Fam">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Supabase">
+        <title>Cats</title>
+    </head>
+    <script>
+        function getRandomPic(max) {
+            fix = String(Math.floor(Math.random() * max)).padStart(2, '0');
+            return `./pic/${fix}.jpg`
+            }
+        document.getElementById("link").src = getRandomPic(8);
+    </script>
+    <body>
+        <center><h1>Cats</h1></center>
+        <center><img id="link" src="./pics/01.jpg"></img></center>
+    </body>
+</html>
