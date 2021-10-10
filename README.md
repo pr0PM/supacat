@@ -1,8 +1,8 @@
 # supacat
 Supabase Hackathon: Learning frontend with js and spreading the cutenees of cats.
 
-Demo: Coming soon!
-Twitter: [pr0PM](https://twitter.com/MP0rp)
+[Demo](https://pr0pm.github.io/supacat/)
+[Twitter](https://twitter.com/MP0rp)
 
 ### Used the supabase storage to store the cat pics!
 
