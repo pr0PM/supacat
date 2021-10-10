@@ -7,7 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Supabase">
         <title>Cats</title>
-    </head>
+    <style>
+        html, body {
+            height: 90%;
+            width: 98%;
+            left: 1%;
+            right: 1%;
+            background-color: rgb(146, 37, 160);
+        }
+        footer {
+            position:absolute;
+            bottom: 0;
+            width: 99%;
+            height: 20px;   /* Height of the footer */
+            background:#6cf;
+            }
+    </style>
     <script>
         function getRandomPic(max) {
             fix = String(Math.floor(Math.random() * max)).padStart(2, '0');
@@ -15,8 +30,10 @@
             }
         document.getElementById("link").src = getRandomPic(8);
     </script>
+    </head>
     <body>
-        <center><h1>Cats</h1></center>
+        <center><h1 style="font-family: monospace;">SupaCats</h1></center>
         <center><img id="link" src="./pics/01.jpg"></img></center>
+    <footer><center> Masters of Humanity </center></footer>
     </body>
 </html>
