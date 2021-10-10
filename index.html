@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="description" content="Cats for the Supabase Fam">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Supabase">
         <title>Cats</title>
+<<<<<<< HEAD
     <style>
         html, body {
             height: 90%;
@@ -23,13 +23,30 @@
             background:#6cf;
             }
     </style>
+=======
+    </head>
+
+    <body>  
+        <center><h1>Cats</h1></center>
+        <center><img id="link" src="/pics/01.jpg"></img></center>
+        <center>
+            <button onClick="window.location.reload();">Random</button>
+            <button id="save">
+                <a id="dl" href="" download="qtcat">Download</a>
+            </button>
+        </center>
+    </body>
+>>>>>>> d35ac2343478d8242a8eac061692e93be8b3203a
     <script>
         function getRandomPic(max) {
-            fix = String(Math.floor(Math.random() * max)).padStart(2, '0');
-            return `./pic/${fix}.jpg`
+            fix = String( Math.floor(Math.random() * 10) + 1).padStart(2, '0');
+            return `https://uqgqetonicpvmkxdvlbo.supabase.in/storage/v1/object/public/supahack/cats/${fix}.jpg`
             }
-        document.getElementById("link").src = getRandomPic(8);
+        var pic = getRandomPic(8);
+        document.getElementById("link").src = pic;
+        document.getElementById("dl").href = pic;
     </script>
+<<<<<<< HEAD
     </head>
     <body>
         <center><h1 style="font-family: monospace;">SupaCats</h1></center>
@@ -37,3 +54,6 @@
     <footer><center> Masters of Humanity </center></footer>
     </body>
 </html>
+=======
+    </html>
+>>>>>>> d35ac2343478d8242a8eac061692e93be8b3203a
