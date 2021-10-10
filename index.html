@@ -24,6 +24,9 @@
             height: 20px;   /* Height of the footer */
             background:#6cf;
             }
+        img {
+            max-width: 300px;
+        }
         button {
             color: #494949 !important;
             text-transform: uppercase;
@@ -55,11 +58,11 @@
         <footer><center> Masters of Humanity </center></footer>
     </body>
     <script>
-        function getRandomPic(max) {
-            fix = String( Math.floor(Math.random() * 10) + 1).padStart(2, '0');
+        function getRandomPic() {
+            fix = String( Math.floor(Math.random() * 15) + 1).padStart(2, '0');
             return `https://uqgqetonicpvmkxdvlbo.supabase.in/storage/v1/object/public/supahack/cats/${fix}.jpg`
             }
-        var pic = getRandomPic(8);
+        var pic = getRandomPic();
         document.getElementById("link").src = pic;
         document.getElementById("dl").href = pic;
     </script>
